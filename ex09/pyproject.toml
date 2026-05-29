@@ -1,0 +1,22 @@
+[project]
+name = "ft_package"
+version = "0.0.1"
+authors = [
+  { name="tbousque", email="tbousque@42.fr" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICENCE"]
+
+[project.urls]
+Homepage = "https://github.com/tbousque/ft_package"
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"

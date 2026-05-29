@@ -1,0 +1,1 @@
+This is a simple package test for 42
