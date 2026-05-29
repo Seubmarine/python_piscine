@@ -11,5 +11,6 @@ def NULL_not_found(object: any) -> int:
     elif (t == bool and not object):
         print(f"Fake: {object} {t}")
     else:
+        print("Type not Found")
         return 1
     return 0
