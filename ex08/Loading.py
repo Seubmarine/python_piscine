@@ -1,14 +1,18 @@
 import os
 
+
 def ft_tqdm(lst: range) -> None:
-    
+    """
+    This print a progress bar on screen with each step defined from a range.
+    This is a generator, each time the function is called the progress bar grow
+    """
     fake = range(lst.stop + 1)
     for i in fake:
         # percent: int = int((i / lst.stop) * 100)
         percent: int = i * 100 // lst.stop
         size: int = os.get_terminal_size().columns - 40
         bar: str = ""
-        
+
         bar_size: int = size
         arrow_size: int = int(bar_size * (percent / 100))
         empty_size: int = bar_size - arrow_size
@@ -21,4 +25,3 @@ def ft_tqdm(lst: range) -> None:
         print(f"{percent:3}%|[{bar}| {i}/{lst.stop}", end='\r')
         # print("", end='\r')
         yield
-    float
